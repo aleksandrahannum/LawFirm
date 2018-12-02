@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    width: 100%;
+    height: 800px;
+}
+
+.main_header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/BG_header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.nav_bar {
+    width: 85%;
+}
+
+.logo {
+    width: 20%;
+}
+
+.nav_bar_list {
+    display: flex;  
+    justify-content: flex-end;
+}
+
+.nav_bar_list_items {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 30px 30px 0 0;
+   
+    
+}
+
+.nav_bar_list_item {
+    list-style-type: none;
+    padding-left: 30px;
+   
+    
+}
+
+.nav_bar_list_item a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 48px;
+    letter-spacing: 2px;
+    flex-wrap: nowrap;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.contact_us_section_text {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 1000;
+    
+}
+
+
+.contact_us_heading {
+    width: 80%;
+}
+
+.contact_us_section_img {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.contact_us_section_img img {
+    width: 500px;
+}
+.contact_us_heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: left;
+    color: white;
+    font-style: normal;
+    padding-bottom: 10%;
+    letter-spacing: 2px;
+}
+
+.contact_us_description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 23px;
+    
+}
+
+.button_item {
+    width: 130px;
+    height: 40px;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.about_us_section {
+    width: 100%;
+    height: 800px;
+    margin-top: 10%;
+    padding-left: 10%;
+    
+    
+}
+
+.about_us_section_left {
+/*    width: 40%;*/
+    float: left;
+}
+
+.about_us_heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: left;
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+.about_us_section_right {
+    padding-right: 20%;
+    
+}
+.paragraph_item {
+   
+}
+
