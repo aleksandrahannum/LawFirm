@@ -1,19 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .main_container {
-    width: 100%;
-    height: 800px;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .main_header {
     width: 100%;
     height: 100vh;
     background-image: url(/img/BG_header.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+/*    background-repeat: no-repeat;*/
+    background-origin: content-box;
     position: relative;
 }
 .nav_bar {
@@ -73,8 +76,8 @@
 
 .contact_us_section_img {
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 55%;
+    left: 60%;
 }
 .contact_us_section_img img {
     width: 500px;
@@ -86,7 +89,7 @@
     text-align: left;
     color: white;
     font-style: normal;
-    padding-bottom: 10%;
+    padding-bottom: 10px;
     letter-spacing: 2px;
 }
 
@@ -97,6 +100,7 @@
     color: #fff;
     letter-spacing: 1px;
     line-height: 23px;
+    padding-top: 40px;
     
 }
 
@@ -105,35 +109,160 @@
     height: 40px;
     margin-top: 10%;
     margin-right: 5%;
+    text-transform: uppercase;
 }
 
-.about_us_section {
+.about_us_section, .pricing_section {
     width: 100%;
-    height: 800px;
+    height: 700px;
     margin-top: 10%;
-/*    padding-left: 10%;*/
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-left: 10%;
+    position: relative;
     
     
 }
 
-.about_us_section_left {
+.about_us_section_left, .pricing_section_left {
 /*    width: 40%;*/
     float: left;
 }
 
-.about_us_heading {
+.about_us_heading, .pricing_heading {
     font-family: 'Playfair Display', sans-serif;
     font-size: 32px;
     font-weight: 200;
     text-align: left;
     padding-top: 10%;
     margin-bottom: 5%;
-}
-.about_us_section_right {
-    padding-right: 20%;
-    
-}
-.paragraph_item {
-   
+    position: absolute;
+    left: 55%;
+    color: #072C4B;
 }
 
+.vektor_about_us{
+    position: absolute;
+    left: 55%;
+    top: 25%;
+}
+.about_us_section_right, .pricing_section_right {
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    width: 30%;
+}
+    
+}
+.second_paragraph.paragraph_item {
+   padding-top: 40px;
+}
+
+.choose_us_section, .our_expertise_section {
+    width: 100%;
+    height: 600px;
+    background-color: #F9FAFb;
+    padding-left: 10%;
+}
+
+.choose_us_heading, .our_expertise_heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: left;  
+    padding-top: 10%;
+    color: #072C4B;
+}
+
+
+.choose_us_paragraph, .our_expertise_paragraph {
+    color: #072C4B;
+    width: 40%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.choose_us_boxes {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.experienced, .pricing, .friendly {
+    width: 33%;
+    height: 200px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.img_border {
+    width: 60px;
+    height: 60px;
+}
+
+.experienced_headline, .pricing_headline, .friendly_headline, .recovery_headline, .busines_headline, .real_estate_headline, .employment_headline, .corporate_headline, .commercial_headline {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 42px;
+    padding-top: 30px;
+}
+
+.experienced_paragraph, .pricing_paragraph, .friendly_paragraph, .commercial_paragraph, .corporate_paragraph, .employment_paragraph,
+.real_estate_paragraph, .busines_paragraph, 
+.recovery_paragraph {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.first_row, .second_row {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 10%;
+    margin-bottom: 30px;;
+}
+
+.first_row {
+    margin-top: 30px;
+}
+
+.first_row:first-child {
+}
+
+.box_border{
+    width: 29%;
+    margin-right: 2%;
+    height: 200px;
+    background-color: aliceblue;
+    border: 2px solid #28699F;
+    position: relative;
+    box-shadow: 2px 8px #28699F;
+    
+    
+}
+
+.recovery, .busines, .real_estate, .employment, .corporate, .commercial {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    
+    
+}
+
+.recovery_headline, .busines_headline, .real_estate_headline, .employment_headline, .corporate_headline, .commercial_headline  {
+    padding-top: 0;
+}
+
+.our_expertise_section {
+    height: 800px;
+    background-image: url(../img/BG_Shape.png);
+    background-size: cover;
+}
