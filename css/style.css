@@ -24,7 +24,21 @@
 }
 
 .logo {
-    width: 20%;
+    width: 130px;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    
+       
+}
+
+.logo_first_item {
+    margin-bottom: 2px;
+}
+.logo_last_item {
+    margin-top: 2px;
 }
 
 .nav_bar_list {
@@ -60,7 +74,7 @@
 }
 
 
-.contact_us_section_text {
+.home_section_text {
     width: 40%;
     position: absolute;
     top: 30%;
@@ -70,19 +84,19 @@
 }
 
 
-.contact_us_heading {
+.home_heading {
     width: 80%;
 }
 
-.contact_us_section_img {
+.home_section_img {
     position: absolute;
     top: 55%;
     left: 60%;
 }
-.contact_us_section_img img {
+.home_section_img img {
     width: 500px;
 }
-.contact_us_heading {
+.home_heading {
     font-family: 'Playfair Display', sans-serif;
     font-size: 32px;
     font-weight: 200;
@@ -93,7 +107,7 @@
     letter-spacing: 2px;
 }
 
-.contact_us_description {
+.home_description {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 13px;
     font-weight: 300;
@@ -110,9 +124,32 @@
     margin-top: 10%;
     margin-right: 5%;
     text-transform: uppercase;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
 }
 
-.about_us_section, .pricing_section {
+.button_item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button_item:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #072C4B;
+}
+
+.button_item a:hover {
+    text-decoration: none;
+    color: #072C4B;
+}
+
+.learn_more {
+    border: 2px solid #28699F;
+    color: #28699F;
+}
+.about_us_section, .pricing_section, .contact_us_section, .footer_section {
     width: 100%;
     height: 700px;
     margin-top: 10%;
@@ -158,14 +195,16 @@
    padding-top: 40px;
 }
 
-.choose_us_section, .our_expertise_section {
+.choose_us_section, .our_expertise_section,
+.contact_us_section {
     width: 100%;
     height: 600px;
     background-color: #F9FAFb;
     padding-left: 10%;
 }
 
-.choose_us_heading, .our_expertise_heading {
+.choose_us_heading, .our_expertise_heading,
+.contact_us_heading{
     font-family: 'Playfair Display', sans-serif;
     font-size: 32px;
     font-weight: 200;
@@ -175,7 +214,8 @@
 }
 
 
-.choose_us_paragraph, .our_expertise_paragraph {
+.choose_us_paragraph, .our_expertise_paragraph,
+.contact_us_paragraph{
     color: #072C4B;
     width: 40%;
     font-family: 'Source Sans Pro', sans-serif;
@@ -203,7 +243,7 @@
     height: 60px;
 }
 
-.experienced_headline, .pricing_headline, .friendly_headline, .recovery_headline, .busines_headline, .real_estate_headline, .employment_headline, .corporate_headline, .commercial_headline {
+.experienced_headline, .pricing_headline, .friendly_headline, .recovery_headline, .busines_headline, .real_estate_headline, .employment_headline, .corporate_headline, .commercial_headline, .menu_footer, .expertise_footer {
     font-family: 'Playfair Display', sans-serif;
     font-size: 25px;
     font-weight: 200;
@@ -213,7 +253,7 @@
 
 .experienced_paragraph, .pricing_paragraph, .friendly_paragraph, .commercial_paragraph, .corporate_paragraph, .employment_paragraph,
 .real_estate_paragraph, .busines_paragraph, 
-.recovery_paragraph {
+.recovery_paragraph, .menu_footer_item {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
@@ -240,7 +280,7 @@
     margin-right: 2%;
     height: 200px;
     background-color: aliceblue;
-    border: 2px solid #28699F;
+    border: 1px solid #28699F;
     position: relative;
     box-shadow: 2px 8px #28699F;
     
@@ -266,3 +306,87 @@
     background-image: url(../img/BG_Shape.png);
     background-size: cover;
 }
+.contact_us_section {
+    position: relative;
+    background-color: #fff;
+    
+}
+
+.contact_us_right {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    
+}
+
+.contact_us_right_background {
+    width: 100%;
+    height: 800px;
+    background-image: url(/img/wojtek_z_koduje_shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_boxes_border {
+    width: 30%;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0px 2px 2px 2px #DFDFDF;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact_boxes_border img {
+    padding-right: 10px;
+    padding-left: 10px; 
+}
+
+.contact_description {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.footer_section{
+    height: 400px;
+    background-color: #181F25;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.footer_items, .our_expertise_footer, .footer_items_description {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-top: 40px;
+   
+}
+
+.footer_items_description {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+}
+
+.menu_footer_item {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+
+
+
+

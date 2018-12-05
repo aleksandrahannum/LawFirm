@@ -17,33 +17,37 @@
     <main class="main_container">
         <header class="main_header">
             <nav class="nav_bar">
-                <div class="logo"></div>
+                <div class="logo">
+                    <img src="img/Vector.png" class="logo_first_item" alt="">
+                    <img src="img/Vector_11.png" alt="">
+                    <img src="img/Vector_2.png" class="logo_last_item" alt="">
+                </div>
                 <div class="nav_bar_list">
                     <ul class="nav_bar_list_items">
-                        <li class="nav_bar_list_item"><a href="#" alt="...">About US</a></li>
-                        <li class="nav_bar_list_item"><a href="#" alt="...">Services</a></li>
-                        <li class="nav_bar_list_item"><a href="#" alt="...">Pricing</a></li>
-                        <li class="nav_bar_list_item"><a href="#" alt="...">Contact us</a></li>
+                        <li class="nav_bar_list_item"><a href="#about_us" alt="...">About US</a></li>
+                        <li class="nav_bar_list_item"><a href="#services" alt="...">Services</a></li>
+                        <li class="nav_bar_list_item"><a href="#pricing" alt="...">Pricing</a></li>
+                        <li class="nav_bar_list_item"><a href="#contact" alt="...">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
-            <section class="contact_us_section">
+            <section class="home_section" id="home">
 
-                <div class="contact_us_section_text">
-                    <h2 class="contact_us_heading">Polish law firm with a lot of experience.</h2>
+                <div class="home_section_text">
+                    <h2 class="home_heading">Polish law firm with a lot of experience.</h2>
                     <img src="/img/Vector_1.png" alt="" class="vektor">
-                    <p class="contact_us_description">Completely monetize resource maximizing core competencies for timely resources. Objectively productize bleeding-edge portals before emerging information. Uniquely enable business leadership.</p>
-                    <button class="contact_us_button button_item">Contact Us</button>
-                    <button class="our_services_button button_item">Our Services</button>
+                    <p class="home_description">Completely monetize resource maximizing core competencies for timely resources. Objectively productize bleeding-edge portals before emerging information. Uniquely enable business leadership.</p>
+                    <button class="contact_us_button button_item"><a href="#contact">Contact Us</a></button>
+                    <button class="our_services_button button_item"><a href="#services">Our Services</a></button>
                 </div>
 
-                <div class="contact_us_section_img">
+                <div class="home_section_img">
                     <img src="/img/IMG_header.png" alt="">
                 </div>
             </section>
 
         </header>
-        <section class="about_us_section">
+        <section class="about_us_section" id="about_us">
             <div class="about_us_section_left">
                 <img src="img/aboutus.png" alt="">
             </div>
@@ -54,10 +58,10 @@
 
                 <p class="second_paragraph paragraph_item">Assertively grow resource sucking solutions and user-centric growth strategies. Assertively orchestrate timely models without professional e-commerce. Objectively visualize vertical convergence after superior technologies. Compellingly utilize transparent deliverables rather than world-class leadership.</p>
 
-                <button class="button_item">Learn more</button>
+                <button class="button_item learn_more">Learn more</button>
             </div>
         </section>
-        <section class="choose_us_section">
+        <section class="choose_us_section" id="services">
             <div class="heading_part">
                 <h2 class="choose_us_heading">Why Choose Us?</h2>
                 <img src="/img/Vector_1.png" alt="" class="vektor">
@@ -142,7 +146,7 @@
 
         </section>
         
-         <section class="pricing_section">
+         <section class="pricing_section" id="pricing">
             <div class="pricing_section_left">
                 <img src="img/pricing.png" alt="">
             </div>
@@ -151,9 +155,65 @@
             <div class="pricing_section_right">
                 <p class="first_paragraph paragraph_item">Assertively grow resource sucking solutions and user-centric growth strategies. Assertively orchestrate timely models without professional e-commerce. Objectively visualize vertical convergence after superior technologies. Compellingly utilize transparent deliverables rather than world-class leadership.</p>
 
-                <button class="button_item">Learn more</button>
+                <button class="button_item learn_more">Learn more</button>
             </div>
         </section>
+        <section class="contact_us_section" id="contact">
+            <div class="contact_us_left">
+                <h2 class="contact_us_heading">Contact Us</h2>
+                <img src="/img/Vector_1.png" alt="" class="vektor">
+                <p class="contact_us_paragraph">Assertively grow resource sucking solutions and user-centric growth strategies. Assertively orchestrate timely models without professional e-commerce.</p>
+                <div class="contact_boxes">
+                    <div class="contact_boxes_border">
+                        <div class="image_item">
+                            <img src="img/Vector_loc.png" alt="">
+                        </div>
+                        <p class="contact_description">ul. Przykladowa 11/26, warsaw</p>
+                    </div>
+                    <div class="contact_boxes_border">
+                        <div class="image_item">
+                            <img src="img/Vector_phone.png" alt="">
+                        </div>
+                        <p class="contact_description">0-123-123-123</p>
+                    </div>
+                    <div class="contact_boxes_border">
+                        <div class="image_item">
+                            <img src="img/Vector_mail.png" alt="">
+                        </div>
+                        <p class="contact_description">law-firm@email.pl</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_us_right">
+                <div class="contact_us_right_background">
+                    <img src="/img/wojtek_z_koduje.png" alt="">
+                </div>
+            </div>
+        </section>
+        <footer class="footer_section">
+            <div class="footer_items">
+                <h3 class="menu_footer">Menu</h3>
+                <a href="#home" class="menu_footer_item">Homepage</a>
+                <a href="#about_us" class="menu_footer_item">About Us</a>
+                <a href="#services" class="menu_footer_item">Services</a>
+                <a href="#pricing" class="menu_footer_item">Pricing</a>
+                <a href="#contact" class="menu_footer_item">Contact</a>
+            </div>
+            <div class="our_expertise_footer">
+                <h3 class="expertise_footer">Our Expertise</h3>
+                <a href="#" class="menu_footer_item">Debt Recovery</a>
+                <a href="#" class="menu_footer_item">Busines Development</a>
+                <a href="#" class="menu_footer_item">Real Estate</a>
+                <a href="#" class="menu_footer_item">Employment</a>
+                <a href="#" class="menu_footer_item">Corporate</a>
+                <a href="#" class="menu_footer_item">Commercial and IP</a>
+            </div>
+            <div class="footer_items_description">
+                <a href="#" class="menu_footer_item">Terms and Conditions</a>
+                <a href="#" class="menu_footer_item">Privacy Policy</a>
+                <p class="design_by">© LawFirm 2018<br>Design by @matsugfx</p>
+            </div>
+        </footer>
     </main>
 
 </body>
